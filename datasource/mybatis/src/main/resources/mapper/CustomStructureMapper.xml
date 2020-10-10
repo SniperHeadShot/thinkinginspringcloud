@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bat.springcloud.datasource.mybatis.dao.CustomStructureDao">
+
+    <resultMap id="customStructureResultMap" type="com.bat.springcloud.bussiness.bean.po.CustomStructurePO">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="age" jdbcType="INTEGER" property="age"/>
+    </resultMap>
+
+    <insert id="insertCustomStructure" parameterType="com.bat.springcloud.bussiness.bean.po.CustomStructurePO">
+        INSERT INTO `t_custom_structure` (`name`, `age`)  VALUES (#{customStructurePO.name}, #{customStructurePO.age})
+    </insert>
+
+    <select id="queryCustomStructureById" parameterType="java.lang.Long" resultMap="customStructureResultMap">
+        SELECT `id`, `name`, `age` FROM `t_custom_structure` where `id` = #{id}
+    </select>
+</mapper>

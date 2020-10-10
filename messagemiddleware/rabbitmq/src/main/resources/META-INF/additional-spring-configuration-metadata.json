@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "name": "spring.rabbitmq.cloud",
+      "type": "com.bat.springcloud.middleware.rabbitmq.config.RabbitmqConfigurationProperties",
+      "description": "Rabbitmq Cloud Config."
+    },
+    {
+      "name": "spring.rabbitmq.cloud.host",
+      "type": "java.lang.String",
+      "description": "Description for spring.rabbitmq.cloud.host."
+    },
+    {
+      "name": "spring.rabbitmq.cloud.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.rabbitmq.cloud.port."
+    },
+    {
+      "name": "spring.rabbitmq.cloud.username",
+      "type": "java.lang.String",
+      "description": "Description for spring.rabbitmq.cloud.username."
+    },
+    {
+      "name": "spring.rabbitmq.cloud.password",
+      "type": "java.lang.String",
+      "description": "Description for spring.rabbitmq.cloud.password."
+    },
+    {
+      "name": "spring.rabbitmq.cloud.virtualHost",
+      "type": "java.lang.String",
+      "description": "Description for spring.rabbitmq.cloud.virtualHost."
+    }
+  ]
+}

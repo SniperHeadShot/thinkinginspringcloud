@@ -1,0 +1,6 @@
+server:
+  port: 10060
+
+spring:
+  application:
+    name: service-mosquitto

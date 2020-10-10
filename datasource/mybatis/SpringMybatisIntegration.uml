@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.mybatis.spring.SqlSessionFactoryBean</OriginalElement>
+  <nodes>
+    <node x="0.0" y="470.0">org.apache.ibatis.transaction.managed.ManagedTransaction</node>
+    <node x="238.0" y="390.0">org.apache.ibatis.transaction.Transaction</node>
+    <node x="743.5" y="160.0">org.mybatis.spring.mapper.MapperScannerConfigurer</node>
+    <node x="420.0" y="470.0">org.apache.ibatis.transaction.jdbc.JdbcTransaction</node>
+    <node x="616.7019230769231" y="0.0">org.springframework.beans.factory.config.BeanFactoryPostProcessor</node>
+    <node x="280.0" y="235.0">org.apache.ibatis.transaction.TransactionFactory</node>
+    <node x="1016.625" y="0.0">org.springframework.beans.factory.Aware</node>
+    <node x="0.0" y="315.0">org.apache.ibatis.transaction.managed.ManagedTransactionFactory</node>
+    <node x="365.36538461538464" y="160.0">org.mybatis.spring.mapper.MapperFactoryBean</node>
+    <node x="60.0" y="80.0">org.springframework.context.ApplicationListener</node>
+    <node x="586.7019230769231" y="80.0">org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor</node>
+    <node x="431.7019230769231" y="80.0">org.springframework.beans.factory.InitializingBean</node>
+    <node x="191.0" y="470.0">org.mybatis.spring.transaction.SpringManagedTransaction</node>
+    <node x="144.0" y="0.0">org.springframework.context.ApplicationEvent</node>
+    <node x="0.0" y="0.0">java.util.EventListener</node>
+    <node x="233.0" y="315.0">org.mybatis.spring.transaction.SpringManagedTransactionFactory</node>
+    <node x="504.0" y="315.0">org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory</node>
+    <node x="238.0" y="80.0">org.springframework.beans.factory.FactoryBean</node>
+    <node x="164.36538461538464" y="160.0">org.mybatis.spring.SqlSessionFactoryBean</node>
+    <node x="1081.701923076923" y="80.0">org.springframework.beans.factory.BeanNameAware</node>
+    <node x="868.7019230769231" y="80.0">org.springframework.context.ApplicationContextAware</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.ApplicationListener" target="org.springframework.context.ApplicationEvent">
+      <point x="39.5" y="-15.0" />
+      <point x="178.5" y="55.0" />
+      <point x="216.0" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.mapper.MapperScannerConfigurer" target="org.springframework.context.ApplicationContextAware">
+      <point x="25.375" y="-15.0" />
+      <point x="870.375" y="130.0" />
+      <point x="965.2019230769231" y="130.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationListener" target="java.util.EventListener">
+      <point x="-39.5" y="-15.0" />
+      <point x="99.5" y="55.0" />
+      <point x="62.0" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.SqlSessionFactoryBean" target="org.springframework.context.ApplicationListener">
+      <point x="-60.33333333333334" y="-15.0" />
+      <point x="194.53205128205127" y="140.0" />
+      <point x="139.0" y="140.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationContextAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-15.0" />
+      <point x="965.2019230769231" y="55.0" />
+      <point x="1037.625" y="55.0" />
+      <point x="-21.0" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.transaction.SpringManagedTransactionFactory" target="org.apache.ibatis.transaction.TransactionFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.SqlSessionFactoryBean" target="org.springframework.beans.factory.FactoryBean">
+      <point x="0.0" y="-15.0" />
+      <point x="254.86538461538464" y="140.0" />
+      <point x="267.75" y="140.0" />
+      <point x="-29.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.mapper.MapperScannerConfigurer" target="org.springframework.beans.factory.InitializingBean">
+      <point x="-76.125" y="-15.0" />
+      <point x="768.875" y="140.0" />
+      <point x="544.2019230769231" y="140.0" />
+      <point x="44.99999999999994" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.mapper.MapperScannerConfigurer" target="org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor">
+      <point x="-25.375" y="-15.0" />
+      <point x="819.625" y="130.0" />
+      <point x="717.7019230769231" y="130.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.SqlSessionFactoryBean" target="org.springframework.beans.factory.InitializingBean">
+      <point x="60.333333333333314" y="-15.0" />
+      <point x="315.19871794871796" y="140.0" />
+      <point x="454.2019230769231" y="140.0" />
+      <point x="-45.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.BeanNameAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-15.0" />
+      <point x="1155.701923076923" y="55.0" />
+      <point x="1079.625" y="55.0" />
+      <point x="21.0" y="15.0" />
+    </edge>
+    <edge source="org.apache.ibatis.transaction.jdbc.JdbcTransaction" target="org.apache.ibatis.transaction.Transaction">
+      <point x="0.0" y="-15.0" />
+      <point x="491.0" y="445.0" />
+      <point x="333.83333333333337" y="445.0" />
+      <point x="38.33333333333337" y="15.0" />
+    </edge>
+    <edge source="org.apache.ibatis.transaction.managed.ManagedTransaction" target="org.apache.ibatis.transaction.Transaction">
+      <point x="0.0" y="-15.0" />
+      <point x="85.5" y="445.0" />
+      <point x="257.1666666666667" y="445.0" />
+      <point x="-38.333333333333314" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.transaction.SpringManagedTransaction" target="org.apache.ibatis.transaction.Transaction">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.apache.ibatis.transaction.managed.ManagedTransactionFactory" target="org.apache.ibatis.transaction.TransactionFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="106.5" y="290.0" />
+      <point x="306.1666666666667" y="290.0" />
+      <point x="-52.333333333333314" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.mapper.MapperFactoryBean" target="org.springframework.beans.factory.FactoryBean">
+      <point x="-41.5" y="-15.0" />
+      <point x="406.86538461538464" y="130.0" />
+      <point x="327.25" y="130.0" />
+      <point x="29.75" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.mapper.MapperFactoryBean" target="org.springframework.beans.factory.InitializingBean">
+      <point x="41.5" y="-15.0" />
+      <point x="489.86538461538464" y="140.0" />
+      <point x="499.2019230769231" y="140.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory" target="org.apache.ibatis.transaction.TransactionFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="596.0" y="290.0" />
+      <point x="410.83333333333337" y="290.0" />
+      <point x="52.33333333333337" y="15.0" />
+    </edge>
+    <edge source="org.mybatis.spring.mapper.MapperScannerConfigurer" target="org.springframework.beans.factory.BeanNameAware">
+      <point x="76.125" y="-15.0" />
+      <point x="921.125" y="140.0" />
+      <point x="1155.701923076923" y="140.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="557.5" y="250.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

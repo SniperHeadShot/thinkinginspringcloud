@@ -1,0 +1,12 @@
+server:
+  port: 20010
+
+spring:
+  application:
+    name: service-mybatis-plus
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.9.102:3306/mybatisplus?characterEncoding=utf8&useSSL=false
+    username: root
+    password: nYd*4M]ipIv+
+
